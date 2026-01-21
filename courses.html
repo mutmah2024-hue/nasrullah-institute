@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses - Nasrullah Institute</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ==============================
+       COURSES PAGE STYLING
+    ============================== */
+    body {
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background-color: #fff8f0;
+      color: #222;
+    }
+
+    /* HERO */
+    .courses-hero {
+      background-color: #fdf0e0;
+      text-align: center;
+      padding: 100px 20px;
+      border-bottom: 4px solid #9d3729;
+    }
+
+    .courses-hero h1 {
+      font-size: 36px;
+      color: #9d3729;
+      margin-bottom: 15px;
+    }
+
+    .courses-hero p {
+      font-size: 16px;
+      color: #444;
+    }
+
+    /* COURSES GRID */
+    .courses-container {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    /* COURSE CARD */
+    .course-card {
+      background-color: #fff3e6;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    }
+
+    .course-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .course-content {
+      padding: 20px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .course-content h3 {
+      font-size: 22px;
+      color: #9d3729;
+      margin-bottom: 10px;
+    }
+
+    .course-content p {
+      font-size: 15px;
+      color: #444;
+      flex-grow: 1;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .course-content .btn {
+      background-color: #9d3729;
+      color: #fdf0e0;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      text-align: center;
+      transition: background-color 0.3s;
+    }
+
+    .course-content .btn:hover {
+      background-color: #b8061d;
+    }
+
+    /* RESPONSIVENESS */
+    @media (max-width: 1024px) {
+      .courses-hero h1 {
+        font-size: 30px;
+      }
+      .courses-hero p {
+        font-size: 15px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .courses-hero h1 {
+        font-size: 26px;
+      }
+      .courses-hero p {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .courses-hero h1 {
+        font-size: 22px;
+      }
+      .courses-hero p {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="courses-hero">
+    <h1>Our Courses</h1>
+    <p>Explore our comprehensive Quran memorization, Tajweed, and Arabic language programs.</p>
+  </section>
+
+  <!-- COURSES GRID -->
+  <section class="courses-container">
+
+    <!-- COURSE 1 -->
+    <div class="course-card">
+      <img src="./image/quran_memorization.jpeg" alt="Quran Memorization">
+      <div class="course-content">
+        <h3>Quran Memorization</h3>
+        <p>Learn to memorize the Quran with expert instructors and structured lessons, suitable for all ages.</p>
+        <a href="enroll.html?course=Quran+Memorization" class="btn">Enroll Now</a>
+      </div>
+    </div>
+
+    <!-- COURSE 2 -->
+    <div class="course-card">
+      <img src="./image/tajweed_course.jpeg" alt="Tajweed Course">
+      <div class="course-content">
+        <h3>Tajweed Course</h3>
+        <p>Master the proper pronunciation and rules of Quranic recitation with our Tajweed course.</p>
+        <a href="enroll.html?course=Tajweed+Course" class="btn">Enroll Now</a>
+      </div>
+    </div>
+
+    <!-- COURSE 3 -->
+    <div class="course-card">
+      <img src="./image/arabic_language.jpeg" alt="Arabic Language">
+      <div class="course-content">
+        <h3>Arabic Language</h3>
+        <p>Learn Arabic from beginner to advanced levels, including reading, writing, and conversational skills.</p>
+        <a href="enroll.html?course=Arabic+Language" class="btn">Enroll Now</a>
+      </div>
+    </div>
+
+    <!-- COURSE 4 -->
+    <div class="course-card">
+      <img src="./image/advanced_quran.jpeg" alt="Advanced Quran Studies">
+      <div class="course-content">
+        <h3>Advanced Quran Studies</h3>
+        <p>Deepen your understanding of Quranic teachings, tafsir, and Islamic principles.</p>
+        <a href="enroll.html?course=Advanced+Quran+Studies" class="btn">Enroll Now</a>
+      </div>
+    </div>
+
+  </section>
+
+
+     <footer class="final-footer">
+         <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between;">
+    
+    <!-- About Section -->
+    <div style="flex: 1 1 250px;">
+      <h2 style="color: #ffd700; margin-bottom: 15px;">Nasrullah Institute</h2>
+      <p>Your gateway to Quranic education and Arabic language mastery. We are dedicated to providing students of all ages with a supportive and engaging learning environment, skilled instructors, and a curriculum designed to help you achieve excellence in Quranic studies, Tajweed, and Arabic language skills.</p>
+    </div>
+
+    
+    <div style="flex: 1 1 150px;">
+      <h3 style="margin-bottom: 15px;">Quick Links</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="./landingpage.html" style="color: #f1f1f1; text-decoration: none;">Home</a></li>
+        <li><a href="about.html" style="color: #f1f1f1; text-decoration: none;">About Us</a></li>
+        <li><a href="courses.html" style="color: #f1f1f1; text-decoration: none;">Courses</a></li>
+        <li><a href="admissions.html" style="color: #f1f1f1; text-decoration: none;">Admissions</a></li>
+        <li><a href="online-classes.html" style="color: #f1f1f1; text-decoration: none;">Online Classes</a></li>
+        <li><a href="contact.html" style="color: #f1f1f1; text-decoration: none;">Contact</a></li>
+      </ul>
+    </div>
+
+    <div style="flex: 1 1 250px;">
+      <h3 style="margin-bottom: 15px;">Contact Us</h3>
+      <p>Email: <a href="mailto:info@nasrullahinstitute.com" style="color: #f1f1f1;">info@nasrullahinstitute.com</a></p>
+      <p>Phone: +123 456 7890</p>
+      <p>Address: 123 Islamic Learning Street, City, Country</p>
+    </div>
+
+    <div style="flex: 1 1 150px;">
+      <h3 style="margin-bottom: 15px;">Follow Us</h3>
+      <p>
+        <a href=""><img src="./image/whatsapp_logo-removebg-preview.png" alt="" width="40" height="30"></a>
+        <a href=""><img src="./image/facebook_logo-removebg-preview.png" alt="" width="40" height="30"></a>
+        <a href=""><img src="./image/insta_logo-removebg-preview.png" alt="" width="40" height="30"></a>
+        <a href=""><img src="./image/x_logo-removebg-preview.png" alt="" width="40" height="30"></a>
+      </p>
+    </div>
+
+  </div>
+
+  <div style="text-align: center; margin-top: 30px; font-size: 14px; color: #aaa;">
+    © 2023 Nasrullah Institute. All rights reserved. Designed to empower students globally with knowledge, confidence, and spiritual growth.
+  </div>
+    </footer>
+</body>
+</html>

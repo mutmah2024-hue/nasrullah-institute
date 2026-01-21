@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - Nasrullah Institute</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ==============================
+       FAQ PAGE STYLING (separate)
+    ============================== */
+    body {
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background-color: #fff8f0;
+      color: #222;
+    }
+
+    .faq-hero {
+      text-align: center;
+      padding: 80px 20px;
+      background-color: #fdf0e0;
+      border-bottom: 4px solid #9d3729;
+    }
+
+    .faq-hero h1 {
+      font-size: 36px;
+      color: #9d3729;
+      margin-bottom: 15px;
+    }
+
+    .faq-hero p {
+      font-size: 16px;
+      color: #444;
+    }
+
+    .faq-container {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .faq-card {
+      background-color: #fff3e6;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .faq-question {
+      padding: 20px 25px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 18px;
+      position: relative;
+    }
+
+    .faq-question::after {
+      content: '+';
+      position: absolute;
+      right: 25px;
+      font-size: 22px;
+      transition: transform 0.3s ease;
+    }
+
+    .faq-card.active .faq-question::after {
+      content: '−';
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      padding: 0 25px;
+      background-color: #fff7ef;
+      font-size: 16px;
+      line-height: 1.7;
+      transition: max-height 0.4s ease, padding 0.4s ease;
+    }
+
+    .faq-card.active .faq-answer {
+      padding: 15px 25px 25px 25px;
+      max-height: 500px; /* adjust for longest answer */
+    }
+
+    /* ==============================
+       RESPONSIVENESS
+    ============================== */
+    @media (max-width: 768px) {
+      .faq-hero h1 {
+        font-size: 28px;
+      }
+
+      .faq-question {
+        font-size: 16px;
+      }
+
+      .faq-answer {
+        font-size: 14.5px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .faq-hero h1 {
+        font-size: 24px;
+      }
+
+      .faq-question {
+        font-size: 15px;
+      }
+
+      .faq-answer {
+        font-size: 14px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="faq-hero">
+    <h1>Frequently Asked Questions</h1>
+    <p>Everything you need to know about enrolling at Nasrullah Institute</p>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="faq-container">
+
+    <!-- FAQ 1 -->
+    <div class="faq-card">
+      <div class="faq-question">1. How do I enroll at Nasrullah Institute?</div>
+      <div class="faq-answer">
+        You can enroll by clicking the "Enroll Now" button on the homepage or the courses page. This will take you to the enrollment form where you fill in your details and submit.
+      </div>
+    </div>
+
+    <!-- FAQ 2 -->
+    <div class="faq-card">
+      <div class="faq-question">2. What courses do you offer?</div>
+      <div class="faq-answer">
+        We offer comprehensive Quran memorization programs, Tajweed courses, and Arabic language studies for students of all ages.
+      </div>
+    </div>
+
+    <!-- FAQ 3 -->
+    <div class="faq-card">
+      <div class="faq-question">3. Are there online classes?</div>
+      <div class="faq-answer">
+        Currently, we focus on in-person classes. We are exploring online options, so please check back soon for updates on online learning opportunities.
+      </div>
+    </div>
+
+    <!-- FAQ 4 -->
+    <div class="faq-card">
+      <div class="faq-question">4. What is the fee structure?</div>
+      <div class="faq-answer">
+        Fees vary depending on the course and duration. For detailed fee information, please contact our admissions office through the contact page or email info@nasrullahinstitute.com.
+      </div>
+    </div>
+
+    <!-- FAQ 5 -->
+    <div class="faq-card">
+      <div class="faq-question">5. Do you provide certificates?</div>
+      <div class="faq-answer">
+        Yes! Upon successful completion of courses, students receive certificates recognized both locally and internationally.
+      </div>
+    </div>
+
+  </section>
+
+
+  <script>
+    const faqCards = document.querySelectorAll('.faq-card');
+
+    faqCards.forEach(card => {
+      const question = card.querySelector('.faq-question');
+
+      question.addEventListener('click', () => {
+        card.classList.toggle('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
+
+  <!-- footer -->
+     <footer class="final-footer">
+         <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between;">
+    
+    <!-- About Section -->
+    <div style="flex: 1 1 250px;">
+      <h2 style="color: #ffd700; margin-bottom: 15px;">Nasrullah Institute</h2>
+      <p>Your gateway to Quranic education and Arabic language mastery. We are dedicated to providing students of all ages with a supportive and engaging learning environment, skilled instructors, and a curriculum designed to help you achieve excellence in Quranic studies, Tajweed, and Arabic language skills.</p>
+    </div>
+
+    
+    <div style="flex: 1 1 150px;">
+      <h3 style="margin-bottom: 15px;">Quick Links</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="./landingpage.html" style="color: #f1f1f1; text-decoration: none;">Home</a></li>
+        <li><a href="about.html" style="color: #f1f1f1; text-decoration: none;">About Us</a></li>
+        <li><a href="courses.html" style="color: #f1f1f1; text-decoration: none;">Courses</a></li>
+        <li><a href="admissions.html" style="color: #f1f1f1; text-decoration: none;">Admissions</a></li>
+        <li><a href="online-classes.html" style="color: #f1f1f1; text-decoration: none;">Online Classes</a></li>
+        <li><a href="contact.html" style="color: #f1f1f1; text-decoration: none;">Contact</a></li>
+      </ul>
+    </div>
+
+    <div style="flex: 1 1 250px;">
+      <h3 style="margin-bottom: 15px;">Contact Us</h3>
+      <p>Email: <a href="mailto:info@nasrullahinstitute.com" style="color: #f1f1f1;">info@nasrullahinstitute.com</a></p>
+      <p>Phone: +123 456 7890</p>
+      <p>Address: 123 Islamic Learning Street, City, Country</p>
+    </div>
+
+    <div style="flex: 1 1 150px;">
+      <h3 style="margin-bottom: 15px;">Follow Us</h3>
+      <p>
+        <a href=""><img src="./image/whatsapp_logo-removebg-preview.png" alt="" width="40" height="30"></a>
+        <a href=""><img src="./image/facebook_logo-removebg-preview.png" alt="" width="40" height="30"></a>
+        <a href=""><img src="./image/insta_logo-removebg-preview.png" alt="" width="40" height="30"></a>
+        <a href=""><img src="./image/x_logo-removebg-preview.png" alt="" width="40" height="30"></a>
+      </p>
+    </div>
+
+  </div>
+
+  <div style="text-align: center; margin-top: 30px; font-size: 14px; color: #aaa;">
+    © 2023 Nasrullah Institute. All rights reserved. Designed to empower students globally with knowledge, confidence, and spiritual growth.
+  </div>
+    </footer>
+</body>
+</html>

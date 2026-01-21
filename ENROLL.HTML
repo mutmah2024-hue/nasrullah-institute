@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enroll Now - Nasrullah Institute</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+  body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: #fdf0e0;
+    color: #222;
+  }
+
+  .enroll-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 25px;
+    background: #fff7ed;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  }
+
+  h1 {
+    text-align: center;
+    color: #9d3729;
+    margin-bottom: 25px;
+  }
+
+  /* =========================
+     REQUIREMENTS BOX
+  ========================= */
+
+  .requirements {
+    background-color: #fff3e6;
+    border-left: 6px solid #9d3729;
+    padding: 25px 30px;
+    border-radius: 12px;
+    margin-bottom: 35px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  }
+
+  .requirements h2 {
+    color: #9d3729;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+
+  .requirements ul {
+    list-style: disc inside;
+  }
+
+  .requirements li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+
+  /* =========================
+     FORM
+  ========================= */
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  .full-width {
+    grid-column: 1 / -1;
+  }
+
+  .submit-btn {
+    grid-column: 1 / -1;
+    background-color: #9d3729;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+  }
+
+  .submit-btn:hover {
+    background-color: #b8061d;
+  }
+
+  /* =========================
+     RESPONSIVE
+  ========================= */
+
+  @media (max-width: 768px) {
+    form {
+      grid-template-columns: 1fr;
+    }
+
+    .requirements h2 {
+      font-size: 20px;
+    }
+  }
+
+</style>
+</head>
+
+<body>
+
+<!-- =========================
+     REQUIREMENTS SECTION
+========================= -->
+
+<section class="requirements">
+  <h2>Enrollment Requirements</h2>
+  <ul>
+    <li>Student must be able to read the Qur’an.</li>
+    <li>Minimum age requirement: 10 years and above.</li>
+    <li>Student must be physically available for screening at the Madrasa.</li>
+    <li>Parent or guardian must be available for registration.</li>
+    <li>₦5,000 is required for the official hardcopy registration form.</li>
+  </ul>
+</section>
+
+<!-- =========================
+     FORM CONTAINER
+========================= -->
+
+<div class="enroll-container">
+
+  <h1>Student Enrollment Form</h1>
+
+  <form id="enroll-form">
+
+    <div>
+      <label>Full Name</label>
+      <input type="text" required>
+    </div>
+
+    <div>
+      <label>Email Address</label>
+      <input type="email" required>
+    </div>
+
+    <div>
+      <label>Phone Number</label>
+      <input type="tel" required>
+    </div>
+
+    <div>
+      <label>Age</label>
+      <input type="number" required>
+    </div>
+
+    <div>
+      <label>Parent / Guardian Name</label>
+      <input type="text" required>
+    </div>
+
+    <div>
+      <label>Parent / Guardian Phone Number</label>
+      <input type="tel" required>
+    </div>
+
+    <div class="full-width">
+      <label>Residential Address</label>
+      <textarea rows="2" required></textarea>
+    </div>
+
+    <div class="full-width">
+      <label>Current Qur’an Memorization Level</label>
+      <input type="text" placeholder="Example: Completed Juz 5 or Surah Al-Baqarah" required>
+    </div>
+
+    <div>
+      <label>Mode of Study</label>
+      <select required>
+        <option value="">Select</option>
+        <option>Day Student</option>
+        <option>Boarding Student</option>
+      </select>
+    </div>
+
+    <div>
+      <label>Course Interested In</label>
+      <select id="course">
+        <option value="">Select Course</option>
+        <option value="quran_memorization">Qur’an Memorization</option>
+        <option value="tajweed">Tajweed</option>
+        <option value="arabic_language">Arabic Language</option>
+      </select>
+    </div>
+
+    <button class="submit-btn" type="submit">
+      Submit Registration
+    </button>
+
+  </form>
+
+</div>
+ <footer class="final-footer">
+         <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between;">
+    
+    <!-- About Section -->
+    <div style="flex: 1 1 250px;">
+      <h2 style="color: #ffd700; margin-bottom: 15px;">Nasrullah Institute</h2>
+      <p>Your gateway to Quranic education and Arabic language mastery. We are dedicated to providing students of all ages with a supportive and engaging learning environment, skilled instructors, and a curriculum designed to help you achieve excellence in Quranic studies, Tajweed, and Arabic language skills.</p>
+    </div>
+
+    
+    <div style="flex: 1 1 150px;">
+      <h3 style="margin-bottom: 15px;">Quick Links</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li><a style=" text-decoration: none;" href="./landingpage.html" style="color: #f1f1f1; text-decoration: none;">Home</a></li>
+        <li><a style=" text-decoration: none;" href="about.html" style="color: #f1f1f1; text-decoration: none;">About Us</a></li>
+        <li><a style=" text-decoration: none;" href="courses.html" style="color: #f1f1f1; text-decoration: none;">Courses</a></li>
+        <li><a style=" text-decoration: none;" href="admissions.html" style="color: #f1f1f1; text-decoration: none;">Admissions</a></li>
+        <li><a style=" text-decoration: none;" href="online-classes.html" style="color: #f1f1f1; text-decoration: none;">Online Classes</a></li>
+        <li><a style=" text-decoration: none;" href="contact.html" style="color: #f1f1f1; text-decoration: none;">Contact</a></li>
+      </ul>
+    </div>
+
+    <div style="flex: 1 1 250px;">
+      <h3 style="margin-bottom: 15px;">Contact Us</h3>
+      <p>Email: <a href="mailto:info@nasrullahinstitute.com" style="color: #f1f1f1;">info@nasrullahinstitute.com</a></p>
+      <p>Phone: +123 456 7890</p>
+      <p>Address: 123 Islamic Learning Street, City, Country</p>
+    </div>
+
+    <div style="flex: 1 1 150px;">
+      <h3 style="margin-bottom: 15px;">Follow Us</h3>
+      <p>
+        <a style=" text-decoration: none;" href=""><img src="./image/whatsapp_logo-removebg-preview.png" alt="" width="40" height="30"></a>
+        <a style=" text-decoration: none;" href="https://www.facebook.com/share/17nAY9DLjh/?mibextid=wwXIfr"><img src="./image/facebook_logo-removebg-preview.png" alt="" width="40" height="30"></a>
+        <a style=" text-decoration: none;" href="https://www.instagram.com/nasrullahinstitute?igsh=bmE0NWZmOHcwc3Ns&utm_source=qr"><img src="./image/insta_logo-removebg-preview.png" alt="" width="40" height="30"></a>
+        <a style=" text-decoration: none;" href="https://youtube.com/@nasrullahinstitute?si=LJtCWkyCyV_XXaxI"><img src="./image/YouTube_full-color_icon__2017_.svg-removebg-preview.png" alt="" width="40" height="28"></a>
+        <a style=" text-decoration: none;" href="https://www.tiktok.com/@nasrullah.institu?_r=1&_t=ZP-937l5kO2P1C"><img src="./image/tiktok_icon-removebg-preview.png" alt="" width="30" height="30"></a>
+      </p>
+    </div>
+
+  </div>
+
+  <div style="text-align: center; margin-top: 30px; font-size: 14px; color: #aaa;">
+    © 2023 Nasrullah Institute. All rights reserved. Designed to empower students globally with knowledge, confidence, and spiritual growth.
+  </div>
+    </footer>
+<!-- =========================
+     SCRIPT
+========================= -->
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-app.js";
+  import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-firestore.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyDJnm5F-i2eUFVybZ0Aa6SqM22COYw1sNQ",
+    authDomain: "nasrullah-63656.firebaseapp.com",
+    projectId: "nasrullah-63656",
+    storageBucket: "nasrullah-63656.firebasestorage.app",
+    messagingSenderId: "1061949236094",
+    appId: "1:1061949236094:web:23efe09acbee2706b6092f"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  const form = document.getElementById("enroll-form");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    // ✅ collect data FIRST
+    const fullName = form.querySelector('input[type="text"]').value;
+    const phone = form.querySelector('input[type="tel"]').value;
+    const age = form.querySelector('input[type="number"]').value;
+    const course = document.getElementById("course").value;
+    const mode = form.querySelector("select").value;
+
+    try {
+      // ✅ SEND TO FIREBASE
+      await addDoc(collection(db, "enrollments"), {
+        fullName,
+        phone,
+        age,
+        course,
+        mode,
+        createdAt: new Date()
+      });
+
+      // ✅ AFTER FIREBASE SUCCESS
+      alert("Enrollment submitted successfully.");
+
+      // ✅ NOW CLEAR THE FORM
+      form.reset();
+
+    } catch (error) {
+      alert("Submission failed. Please try again.");
+      console.error(error);
+    }
+  });
+</script>
+
+
+</body>
+</html>
