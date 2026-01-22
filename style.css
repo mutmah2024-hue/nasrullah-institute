@@ -296,7 +296,7 @@
     opacity: 0.9;
 }
 
-/* MAIN SECTION */
+
 
 .about-section {
     background-color: #fdf0e0;
@@ -308,7 +308,6 @@
     margin: auto;
 }
 
-/* CONTENT BLOCKS */
 
 .about-block {
     margin-bottom: 50px;
@@ -337,7 +336,7 @@
     margin-bottom: 12px;
 }
 
-/* HIGHLIGHT BOX */
+
 
 .about-block.highlight {
     background: #fff7ed;
@@ -356,7 +355,7 @@
     color: #333;
 }
 
-/* RESPONSIVE */
+
 
 @media (max-width: 768px) {
     .about-hero h1 {
@@ -369,9 +368,7 @@
 }
 
 
-/* ============================= */
-/* 📱 MOBILE RESPONSIVENESS */
-/* ============================= */
+
 
 @media (max-width: 768px) {
   .mission-vision {
@@ -398,9 +395,7 @@
   }
 }
 
-/* ============================= */
-/* 📱 SMALL PHONES */
-/* ============================= */
+
 
 @media (max-width: 480px) {
   .mission-vision {
@@ -524,9 +519,7 @@
             
 
         }
-        /* ======================================
-   🌍 GLOBAL RESPONSIVENESS FIX
-====================================== */
+ 
 
 img,
 video {
@@ -534,14 +527,11 @@ video {
   height: auto;
 }
 
-/* Prevent overflow */
 body {
   overflow-x: hidden;
 }
 
-/* ======================================
-   📱 TABLETS (max-width: 1024px)
-====================================== */
+
 
 @media (max-width: 1024px) {
 
@@ -591,13 +581,10 @@ body {
   }
 }
 
-/* ======================================
-   📱 MOBILE PHONES (max-width: 768px)
-====================================== */
+
 
 @media (max-width: 768px) {
 
-  /* HERO */
   .hero-section {
     height: 85vh;
   }
@@ -621,7 +608,7 @@ body {
     padding: 10px 24px;
   }
 
-  /* ABOUT HERO */
+  
   .about-hero {
     height: auto;
     padding: 100px 20px;
@@ -635,7 +622,6 @@ body {
     font-size: 15px;
   }
 
-  /* ABOUT CONTENT */
   .about-section {
     padding: 60px 15px;
   }
@@ -648,21 +634,17 @@ body {
     font-size: 15px;
   }
 
-  /* MISSION & VISION */
+ 
   .mv-container {
     grid-template-columns: 1fr;
   }
 
-  /* FOOTER */
   .final-footer {
     padding: 40px 20px;
     text-align: center;
   }
 }
 
-/* ======================================
-   📱 SMALL PHONES (max-width: 480px)
-====================================== */
 
 @media (max-width: 480px) {
 
@@ -719,14 +701,14 @@ body {
   transition: all 0.3s ease;
 }
 
-/* Show hamburger only on mobile */
+
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
   }
 
   nav ul {
-    display: none; /* hide nav initially */
+    display: none; 
     flex-direction: column;
     gap: 15px;
     background-color: #fdf0e0;
@@ -744,18 +726,8 @@ body {
     display: flex;
   }
 }
-/* ==============================
-   🌍 FULL RESPONSIVENESS ADDITION
-   Do not remove anything above!
-   This enhances scaling for all sections
-============================== */
-
-/* ==============================
-   TABLETS (≤1024px)
-============================== */
 @media (max-width: 1024px) {
 
-  /* HERO SECTION */
   .hero-section {
     height: 80vh;
   }
@@ -778,7 +750,6 @@ body {
     font-size: 15px;
   }
 
-  /* WHY SECTION */
   .why-container {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -788,12 +759,11 @@ body {
     font-size: 32px;
   }
 
-  /* MISSION & VISION */
   .mv-container {
     grid-template-columns: 1fr;
   }
 
-  /* TESTIMONIALS */
+ 
   .student-feedback {
     flex-direction: column;
   }
@@ -803,7 +773,6 @@ body {
     margin: 20px auto;
   }
 
-  /* FOOTER */
   .final-footer > div {
     flex-direction: column;
     gap: 30px;
