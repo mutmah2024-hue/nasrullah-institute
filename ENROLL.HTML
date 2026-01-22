@@ -29,10 +29,6 @@
     margin-bottom: 25px;
   }
 
-  /* =========================
-     REQUIREMENTS BOX
-  ========================= */
-
   .requirements {
     background-color: #fff3e6;
     border-left: 6px solid #9d3729;
@@ -58,10 +54,6 @@
     line-height: 1.6;
     font-size: 16px;
   }
-
-  /* =========================
-     FORM
-  ========================= */
 
   form {
     display: grid;
@@ -110,9 +102,6 @@
     background-color: #b8061d;
   }
 
-  /* =========================
-     RESPONSIVE
-  ========================= */
 
   @media (max-width: 768px) {
     form {
@@ -129,9 +118,6 @@
 
 <body>
 
-<!-- =========================
-     REQUIREMENTS SECTION
-========================= -->
 
 <section class="requirements">
   <h2>Enrollment Requirements</h2>
@@ -143,10 +129,6 @@
     <li>₦5,000 is required for the official hardcopy registration form.</li>
   </ul>
 </section>
-
-<!-- =========================
-     FORM CONTAINER
-========================= -->
 
 <div class="enroll-container">
 
@@ -223,10 +205,9 @@
  <footer class="final-footer">
          <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between;">
     
-    <!-- About Section -->
     <div style="flex: 1 1 250px;">
       <h2 style="color: #ffd700; margin-bottom: 15px;">Nasrullah Institute</h2>
-      <p>Your gateway to Quranic education and Arabic language mastery. We are dedicated to providing students of all ages with a supportive and engaging learning environment, skilled instructors, and a curriculum designed to help you achieve excellence in Quranic studies, Tajweed, and Arabic language skills.</p>
+      <p>Your gateway to Quranic education and Arabic language mastery. We are dedicated to providing students of all ages with a supportive and engaging learning environment, skilled Ustaadhs, and a curriculum designed to help you achieve excellence in Quranic studies, Tajweed, and Arabic language skills.</p>
     </div>
 
     
@@ -237,7 +218,6 @@
         <li><a style=" text-decoration: none;" href="about.html" style="color: #f1f1f1; text-decoration: none;">About Us</a></li>
         <li><a style=" text-decoration: none;" href="courses.html" style="color: #f1f1f1; text-decoration: none;">Courses</a></li>
         <li><a style=" text-decoration: none;" href="admissions.html" style="color: #f1f1f1; text-decoration: none;">Admissions</a></li>
-        <li><a style=" text-decoration: none;" href="online-classes.html" style="color: #f1f1f1; text-decoration: none;">Online Classes</a></li>
         <li><a style=" text-decoration: none;" href="contact.html" style="color: #f1f1f1; text-decoration: none;">Contact</a></li>
       </ul>
     </div>
@@ -245,8 +225,8 @@
     <div style="flex: 1 1 250px;">
       <h3 style="margin-bottom: 15px;">Contact Us</h3>
       <p>Email: <a href="mailto:info@nasrullahinstitute.com" style="color: #f1f1f1;">info@nasrullahinstitute.com</a></p>
-      <p>Phone: +123 456 7890</p>
-      <p>Address: 123 Islamic Learning Street, City, Country</p>
+      <p>Phone: +234 7012345678</p>
+      <p>Address: Ese-oke Street, Hope, off Airport Alakia, Ibadan, Nigeria.</p>
     </div>
 
     <div style="flex: 1 1 150px;">
@@ -263,12 +243,9 @@
   </div>
 
   <div style="text-align: center; margin-top: 30px; font-size: 14px; color: #aaa;">
-    © 2023 Nasrullah Institute. All rights reserved. Designed to empower students globally with knowledge, confidence, and spiritual growth.
+    © 2026 Nasrullah Institute. All rights reserved. Designed to empower students globally with knowledge, confidence, and spiritual growth.
   </div>
-    </footer>
-<!-- =========================
-     SCRIPT
-========================= -->
+</footer>
 
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-app.js";
@@ -291,28 +268,27 @@
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    // ✅ collect data FIRST
+    
     const fullName = form.querySelector('input[type="text"]').value;
     const phone = form.querySelector('input[type="tel"]').value;
     const age = form.querySelector('input[type="number"]').value;
+    const email = form.querySelector('input[type="email"]').value;
     const course = document.getElementById("course").value;
     const mode = form.querySelector("select").value;
 
     try {
-      // ✅ SEND TO FIREBASE
       await addDoc(collection(db, "enrollments"), {
         fullName,
         phone,
         age,
+        email,
         course,
         mode,
         createdAt: new Date()
       });
 
-      // ✅ AFTER FIREBASE SUCCESS
-      alert("Enrollment submitted successfully.");
+      alert("Enrollment submitted successfully. An email or message will be sent to you shortly.");
 
-      // ✅ NOW CLEAR THE FORM
       form.reset();
 
     } catch (error) {
