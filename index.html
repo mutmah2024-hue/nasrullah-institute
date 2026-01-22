@@ -8,30 +8,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <header>
-    <div class="logo"><img src="./image/Screenshot_2026-01-17_at_7.02.36_PM-removebg-preview.png" alt="" width="50" height="50"></div>
-    <nav>
-      <ul>
-         <li class="cc"><a href="https://wa.link/1ut9gb"><img src="./image/whatsapp_logo-removebg-preview.png" alt="" width="40" height="30"></a></li>
-        <li class="aa"><a style=" text-decoration: none;" href="https://www.facebook.com/share/17nAY9DLjh/?mibextid=wwXIfr"><img src="./image/facebook_logo-removebg-preview.png" alt="" width="40" height="30"></a></li>
-         <li class="cc"><a style=" text-decoration: none;" href="https://www.instagram.com/nasrullahinstitute?igsh=bmE0NWZmOHcwc3Ns&utm_source=qr"><img src="./image/insta_logo-removebg-preview.png" alt="" width="40" height="30"></a></li>
-          <li class="cc"><a style=" text-decoration: none;" href="https://youtube.com/@nasrullahinstitute?si=LJtCWkyCyV_XXaxI"><img src="./image/YouTube_full-color_icon__2017_.svg-removebg-preview.png" alt="" width="30" height="30" style="padding-top: 5px;"></a></li>
-          <li class="cc"><a style=" text-decoration: none;" href="https://www.tiktok.com/@nasrullah.institu?_r=1&_t=ZP-937l5kO2P1C"><img src="./image/tiktok_icon-removebg-preview.png" alt="" width="25" height="30"></a></li>
-        <li class="bb"><a href="./faq.html">FAQ</a></li>
-        <li class="dd"><a href="./about.html">About</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-        <li><a href="./ENROLL.HTML">Enroll Now</a></li>
-      </ul>
-    </nav>
-    
-<div class="hamburger">
-  <div class="bar"></div>
-  <div class="bar"></div>
-  <div class="bar"></div>
-</div>
+<header>
+  <div class="logo">
+    <img src="./image/Screenshot_2026-01-17_at_7.02.36_PM-removebg-preview.png" alt="" width="50" height="50">
+  </div>
 
-  </header>
-   
+  <nav>
+    <ul class="desktop-menu">
+      <li class="cc"><a href="https://wa.link/1ut9gb"><img src="./image/whatsapp_logo-removebg-preview.png" alt="" width="40" height="30"></a></li>
+      <li class="aa"><a style="text-decoration: none;" href="https://www.facebook.com/share/17nAY9DLjh/?mibextid=wwXIfr"><img src="./image/facebook_logo-removebg-preview.png" alt="" width="40" height="30"></a></li>
+      <li class="cc"><a style="text-decoration: none;" href="https://www.instagram.com/nasrullahinstitute?igsh=bmE0NWZmOHcwc3Ns&utm_source=qr"><img src="./image/insta_logo-removebg-preview.png" alt="" width="40" height="30"></a></li>
+      <li class="cc"><a style="text-decoration: none;" href="https://youtube.com/@nasrullahinstitute?si=LJtCWkyCyV_XXaxI"><img src="./image/YouTube_full-color_icon__2017_.svg-removebg-preview.png" alt="" width="30" height="30" style="padding-top: 5px;"></a></li>
+      <li class="cc"><a style="text-decoration: none;" href="https://www.tiktok.com/@nasrullah.institu?_r=1&_t=ZP-937l5kO2P1C"><img src="./image/tiktok_icon-removebg-preview.png" alt="" width="25" height="30"></a></li>
+      <li class="bb"><a href="./faq.html">FAQ</a></li>
+      <li class="dd"><a href="./about.html">About</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+      <li><a href="./ENROLL.HTML">Enroll Now</a></li>
+    </ul>
+  </nav>
+
+</header>
+
 <div class="hero-section">
 
     <video class="background-video" autoplay muted loop playsinline>
@@ -115,13 +112,14 @@ Upon completion, students receive certificates acknowledged both locally and int
         <div class="icon yellow">
           📘
         </div>
-        <div>
-          <h4>Online Classes</h4>
-          <p>
-             Flexible Online Classes
-Our online classes make it possible for students to learn anytime, anywhere, ensuring access to knowledge without compromising the quality of instruction or spiritual guidance.
+       <div class="online-classes">
+  <h4>Madrasah Programs</h4>
+  <p>
+    Our madrasah offers a variety of programs in Islamic studies, Arabic, and character development, 
+    helping students grow in knowledge, faith, and good manners.
+  </p>
+</div>
 
-          </p>
         </div>
       </div>
 
@@ -244,20 +242,20 @@ Our online classes make it possible for students to learn anytime, anywhere, ens
     </footer>
 
 
+<script>
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
 
-  <script>
-
-document.addEventListener('DOMContentLoaded', () => {
-  const hamburger = document.querySelector('.hamburger');
-  const navMenu = document.querySelector('nav ul');
-
-  hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active'); 
-    navMenu.classList.toggle('show');     
-  });
+hamburger.addEventListener('click', () => {
+  if (mobileMenu.style.display === "block") {
+    mobileMenu.style.display = "none";
+  } else {
+    mobileMenu.style.display = "block";
+  }
 });
 
 </script>
+
 
 
 </body>
