@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nasrullah Institute of Qur'an Memorization and Arabic Studies</title>
     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
 <body>
 <header>
@@ -26,6 +26,21 @@
       <li><a href="./ENROLL.HTML">Enroll Now</a></li>
     </ul>
   </nav>
+  <div class="menu-link">
+  <ul>
+    <li>
+      <span class="material-symbols-outlined menu-icon" id="menuToggle">menu</span>
+
+      <div class="dropdownBox">
+        <div class="dropdown">
+          <a href="about.html">About Us</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
 
 </header>
 
@@ -242,19 +257,25 @@ Upon completion, students receive certificates acknowledged both locally and int
     </footer>
 
 
-<script>
-const hamburger = document.getElementById('hamburger');
-const mobileMenu = document.getElementById('mobileMenu');
 
-hamburger.addEventListener('click', () => {
-  if (mobileMenu.style.display === "block") {
-    mobileMenu.style.display = "none";
-  } else {
-    mobileMenu.style.display = "block";
-  }
+
+<script>
+const toggle = document.getElementById("menuToggle");
+const menu = document.querySelector(".dropdownBox");
+const links = document.querySelectorAll(".dropdown a");
+
+toggle.addEventListener("click", () => {
+  menu.style.display =
+    menu.style.display === "block" ? "none" : "block";
 });
 
+links.forEach(link => {
+  link.addEventListener("click", () => {
+    menu.style.display = "none";
+  });
+});
 </script>
+
 
 
 
