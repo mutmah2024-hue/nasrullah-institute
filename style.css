@@ -355,7 +355,7 @@
     font-size: 16px;
     color: #333;
 }
-    /* MOBILE MENU WRAPPER */
+    
 .dropdownBox {
   position: absolute;
   top: 100%;
@@ -368,8 +368,8 @@
 .dropdown {
   width: 70%;
   margin-left: 50px ;
-  background-color: #F7EEDD;
-  border-top: 2px solid #C49A6C;
+  background-color: #fdf0e0;
+  border-top: 2px solid #9d3729;
   border-radius: 12px;
   padding: 10px 0;
 
